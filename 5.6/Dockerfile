@@ -16,4 +16,13 @@ RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$P
     && mv phpredis-$PHPREDIS_VERSION /usr/src/php/ext/redis \
     && docker-php-ext-install redis
 
+# install twig extension
+ENV PHPTWIG_VERSION 1.21.1
+
+RUN curl -L -o /tmp/twig.tar.gz https://github.com/twigphp/Twig/archive/v$PHPTWIG_VERSION.tar.gz \
+    && tar xfz /tmp/twig.tar.gz \
+    && rm -r /tmp/twig.tar.gz \
+    && mv Twig-$PHPTWIG_VERSION /usr/src/php/ext/twig \
+    && docker-php-ext-install twig
+
 COPY config/php.ini /usr/local/etc/php/
