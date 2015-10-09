@@ -4,7 +4,7 @@ Standalone PHP-FPM container with extensions installed for Drupal, Wordpress and
 The reason to have this container image is because:
 
 1. The offical PHP docker image doesn't have enough extensions for Drupal or WordPress
-2. The offical Drupal or WordPress images are all-in-one style (Web server, PHP and CMS)
+2. The offical Drupal or WordPress images are all-in-one style (Web server, PHP and CMS), which is not scalable.
 
 This image contains:
 
@@ -16,3 +16,4 @@ This image contains:
 * zip
 * opcache
 * phpredis
+* bcmath (required by Address or Commerce)
