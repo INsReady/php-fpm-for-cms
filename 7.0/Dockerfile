@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev git 
 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip opcache bcmath
 
 # install memcached extension
-git clone --branch php7 https://github.com/php-memcached-dev/php-memcached /usr/src/php/ext/memcached \
+RUN git clone --branch php7 https://github.com/php-memcached-dev/php-memcached /usr/src/php/ext/memcached \
   && cd /usr/src/php/ext/memcached \
   && docker-php-ext-configure memcached \
   && docker-php-ext-install memcached
