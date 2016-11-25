@@ -17,3 +17,4 @@ This image contains:
 * opcache
 * memcached
 * bcmath (required by Address or Commerce)
+* phpredis
