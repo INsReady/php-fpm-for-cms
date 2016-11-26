@@ -15,6 +15,6 @@ This image contains:
 * pdo_pgsql
 * zip
 * opcache
-* memcached
+* imagemagick
 * bcmath (required by Address or Commerce)
 * phpredis
