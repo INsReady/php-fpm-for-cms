@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev nano
 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip opcache bcmath
 
 # install phpredis extension
-ENV PHPREDIS_VERSION 3.1.2
+ENV PHPREDIS_VERSION 3.1.4
 RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz \
     && tar xfz /tmp/redis.tar.gz \
     && rm -r /tmp/redis.tar.gz \
