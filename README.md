@@ -2,8 +2,8 @@
 Standalone PHP-FPM container with extensions installed for Drupal, Wordpress and Joomla
 
 ## Supported tags and respective `Dockerfile` links
--	[`7.1`, `latest` (*Dockerfile*)](https://github.com/INsReady/php-fpm-for-cms/blob/master/7.1/Dockerfile)
--	[`7.0` (*Dockerfile*)](https://github.com/INsReady/php-fpm-for-cms/blob/master/7.0/Dockerfile)
+-	[`7.2`, `latest` (*Dockerfile*)](https://github.com/INsReady/php-fpm-for-cms/blob/master/7.2/Dockerfile)
+-	[`7.1` (*Dockerfile*)](https://github.com/INsReady/php-fpm-for-cms/blob/master/7.1/Dockerfile)
 -	[`5.6` (*Dockerfile*)](https://github.com/INsReady/php-fpm-for-cms/blob/master/5.6/Dockerfile)
 
 ## The reason to have this container image is because:
